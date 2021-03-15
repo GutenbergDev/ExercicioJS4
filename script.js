@@ -1,6 +1,7 @@
 function mostrarTabuada() {
     let inNumero = document.querySelector('#inNumero');
     let outTabuada = document.querySelector('#outTabuada');
+    let outAutor = document.querySelector('#outAutor');
 
     let numero = Number(inNumero.value);
 
@@ -21,6 +22,7 @@ function mostrarTabuada() {
 
     // o conteúdo da tag pre é alterado para exibir a tabuada do num
     outTabuada.textContent = resposta;
+    outAutor.style.color = '#6048b7';
 }
 let btMostrar = document.querySelector('#btMostrar');
 btMostrar.addEventListener("click", mostrarTabuada);
